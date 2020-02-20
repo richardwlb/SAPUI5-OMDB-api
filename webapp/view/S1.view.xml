@@ -1,0 +1,59 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:f="sap.ui.layout.form" xmlns:html="http://www.w3.org/1999/xhtml" controllerName="workspace.MoviesAPI.controller.S1">
+	<App>
+		<pages>
+			<Page title="Movie Details" showNavButton="true" navButtonPress="pageBack">
+				<content>
+						<VBox class="sapUiSmallMargin">
+							<f:SimpleForm id="SimpleFormDisplay354" editable="false" layout="ResponsiveGridLayout" title="{/Title}" labelSpanXL="3" labelSpanL="3" labelSpanM="3" labelSpanS="12" adjustLabelSpan="false" emptySpanXL="4" emptySpanL="4" emptySpanM="4" emptySpanS="0" columnsXL="1" columnsL="1" columnsM="1" singleContainerFullSize="false">
+								<f:content>
+									
+									<Image class="imgPoster" src="{/Poster}" id="imgPoster" alt="{/Title}"/>
+									<Label text="Year"/>
+									<Text id="titelText" text="{/Year}"/>
+									
+									<Label text="Rated"/>
+									<Text text="{/Rated}"/>
+									
+									<Label text="Released"/>
+									<Text text="{/Released}"/>
+									
+									<Label text="Runtime"/>
+									<Text text="{/Runtime}"/>
+									
+									<Label text="Genre"/>
+									<Text text="{/Genre}"/>
+									
+									<Label text="Director"/>
+									<Text text="{/Director}"/>
+									
+									<Label text="Actors"/>
+									<Text text="{/Actors}"/>
+									
+									<Label text="Language"/>
+									<Text text="{/Language}"/>
+									
+									<Label text="Country"/>
+									<Text text="{/Country}"/>
+									
+									<Label text="Awards"/>
+									<Text text="{/Awards}"/>
+									
+									<Label text="Plot"/>
+									<Text text="{/Plot}"/>
+									
+									<Label text="BoxOffice"/>
+									<Text text="{/BoxOffice}"/>
+									
+									<Label text="Production"/>
+									<Text text="{/Production}"/>
+									
+									
+									
+								</f:content>
+							</f:SimpleForm>
+						</VBox>
+				</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>

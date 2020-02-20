@@ -1,0 +1,35 @@
+{
+    "application": {
+        "id": "",
+        "title": "workspace.MoviesAPI.MoviesAPI",
+        "description": "Search movies App",
+        "type": "SAP_UI5_Component",
+        "componentUrl": "/",
+        "appUrl": "#MoviesAPI-Display",
+        "navigationComponentName": "workspace.MoviesAPI",
+        "intentSemanticObject": "MoviesAPI",
+        "intentAction": "Display",
+        "html5ApplicationName": "moviesapi",
+        "HCPParentApplicationName": ""
+    },
+    "assignment": {
+        "groups": [
+            "1b8146eb-56d9-49d3-b9f0-7b3ba11b1612"
+        ],
+        "contentPackages": [
+            "43b45ba4-bc23-4903-a0c4-e727a8836c4b"
+        ],
+        "categories": []
+    },
+    "tile": {
+        "type": "StaticTile",
+        "title": "Search Movies App",
+        "subtitle": "Search movies details from omdbapi",
+        "searchKeywords": "Search Movies App,Search movies details from omdbapi",
+        "displayIconUrl": "sap-icon://my-view",
+        "displayInfoText": "",
+        "size": "1x1",
+        "serviceURL": "",
+        "refreshInterval": ""
+    }
+}

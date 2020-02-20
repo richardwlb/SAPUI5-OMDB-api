@@ -1,0 +1,12 @@
+/* Enter your custom styles here */
+
+.imgPoster {
+	/*margin: auto;*/
+	/*padding: 10px;*/
+	width: 250px;
+	height: 350px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	/*width: 50%;*/
+}

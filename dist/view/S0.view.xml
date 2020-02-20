@@ -1,0 +1,60 @@
+<mvc:View 
+	controllerName="workspace.MoviesAPI.controller.S0" 
+	xmlns:mvc="sap.ui.core.mvc" 
+	displayBlock="true" 
+	xmlns="sap.m"
+	xmlns:f="sap.ui.layout.form"
+	xmlns:l="sap.ui.layout"
+	xmlns:core="sap.ui.core" >
+	<Shell id="shell">
+		<App id="app">
+			<pages>
+				<Page id="page" title="{i18n>title}">
+					<content>
+	
+						<f:SimpleForm id="simpleForm" title="Search Movie" 
+						minWidth="1024" maxContainerCols="2" layout="ResponsiveLayout" editable="true" visible="true">
+							
+							<Label text="Title" />
+							<Input submit="onSearch" id="inputTitle" width="350px" />
+							<Label text="Year" />
+							<Input submit="onSearch" id="inputYear" width="100px" maxLength="4" />
+							<Label text="Type" />
+							<Select id="selectType" width="200px" selectedKey="movie" >
+								<items>
+									<core:Item text="Movies" key="movie" />
+									<core:Item text="Series" key="series" />
+									<core:Item text="Episode" key="episode" />
+								</items>
+							</Select>
+							
+						</f:SimpleForm >
+
+						<Bar>
+							<contentRight>
+								<Button text="Search" press="onSearch" type="Emphasized" />
+							</contentRight>
+						</Bar>
+						
+							<List
+								id="items"
+								headerText="Movies"
+								items="{path:'/Search'}">
+								<items>
+									<StandardListItem
+										title="{Title}"
+										description="{Year}"
+										icon="{Poster}"
+										iconDensityAware="false"
+										iconInset="false"
+										adaptTitleSize="false"
+										type="Navigation"
+										press="goToDetails" />
+								</items>
+							</List>
+					</content>
+				</Page>
+			</pages>
+		</App>
+	</Shell>
+</mvc:View>
